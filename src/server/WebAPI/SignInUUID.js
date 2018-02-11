@@ -118,8 +118,8 @@ SignInHandler.prototype.attach = function(router){
         }
         
         // dlete this
-        if(secret == 'e97b4b7143dfed2b964c6262b307decc')
-            secretPassed = true;
+        // if(secret == 'e97b4b7143dfed2b964c6262b307decc')
+        //     secretPassed = true;
         
         if(!secretPassed){
             self.successResponse(response,Const.resCodeSignInWrongSecret);

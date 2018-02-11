@@ -38,8 +38,7 @@ UserModel.prototype.init = function(mongoose){
         telNumber : String,
         additionalInfo: {}
     });
-
-    this.model = mongoose.model(Config.dbCollectionPrefix + "users", this.schema);
+    this.model = mongoose.model(Config.dbCollectionPrefix + "users",this.schema);
 
 }
 

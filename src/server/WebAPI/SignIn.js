@@ -48,12 +48,12 @@ SignInHandler.prototype.attach = function(router){
     router.post('/',function(request,response){
             
         var userModel = UserModel.get();
-            
-        var username = request.body.username;
+        var email = request.body.email;
+        //var username = request.body.username;
         var password = request.body.password;
                 
     	userModel.findOne({ 
-    	    username: username,
+    	    email: email,
     	    password: password
     	    
         },function (err, user) {

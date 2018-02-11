@@ -1,6 +1,6 @@
 var fs = require('fs-extra');
 var _ = require('lodash');
-var sha1 = require('sha1');
+var SHA256 = require("crypto-js/sha256");
 var http = require('http');
 var Stream = require('stream').Transform;
 var async = require('async');
@@ -70,7 +70,7 @@ DatabaseManager.init(function(success){
                                         displayName:row.first_name + " " + row.last_name,
                                         username:row.username,
                                         email: row.email,
-                                        password: sha1('yumiko'),
+                                        password: SHA256('123456'),
                                         avatar: {
                                             file : filename,
                                             thumb : thumbname

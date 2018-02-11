@@ -6,7 +6,7 @@ var _ = require('lodash');
 var async = require('async');
 var validator = require('validator');
 var fs = require('fs-extra');
-var lwip = require('lwip');
+//var lwip = require('lwip');
 
 var SocketAPIHandler = require('../SocketAPI/SocketAPIHandler');
 

@@ -60,7 +60,7 @@ gulp.task('copy', function() {
     gulp.src('node_modules/bootstrap-sass/assets/fonts/**/*').pipe( gulp.dest('public/fonts') );
     gulp.src('src/client/index.html').pipe( gulp.dest('public') );
     gulp.src('src/client/img/**/*').pipe( gulp.dest('public/img') );
-
+    gulp.src('src/client/js/adapter.js').pipe(gulp.dest('public/js'));
 });
 
 gulp.task('build-css', function() {

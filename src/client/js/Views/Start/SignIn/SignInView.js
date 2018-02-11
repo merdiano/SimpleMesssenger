@@ -1,7 +1,7 @@
 var Backbone = require('backbone');
 var template = require('./SignIn.hbs');
 var _ = require('lodash');
-var sha1 = require('sha1');
+var SHA256 = require("crypto-js/sha256");
 
 var Utils = require('../../../lib/utils');
 var Const = require('../../../lib/consts');
@@ -77,7 +77,8 @@ var SignInView = BaseView.extend({
 
         		var username = $('#form-signin input[name="username"]').val();
         		var password = $('#form-signin input[name="password"]').val();
-                var passwordHashed = hash = sha1(password);
+                //todo use sha256 algo as android uses it
+        		var passwordHashed = hash = SHA256(password);
                 
                 SignInClient.send({
                     

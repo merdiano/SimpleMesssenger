@@ -6,7 +6,7 @@ var _ = require('lodash');
 var async = require('async');
 var validator = require('validator');
 var fs = require('fs-extra');
-var lwip = require('lwip');
+//var lwip = require('lwip');
 
 var init = require('../../lib/init');
 var Const = require("../../lib/consts");
@@ -274,7 +274,7 @@ CreateNewConversation.prototype.generateAvatar = function(userIds,callBack){
             }
             
             var imagesToPaste = [];
-            
+          /*
             lwip.create(Const.thumbSize, Const.thumbSize, 'white', function(err, baseImage){
                 
                 async.each(asyncResult.validFileIds, function(fileId,doneEach){
@@ -304,7 +304,7 @@ CreateNewConversation.prototype.generateAvatar = function(userIds,callBack){
                      
                 });
 
-            });      
+            });      */
 
         },
 

@@ -55,9 +55,9 @@ var DatabaseManager = {
     
     setupSchema : function(){
         
-        this.messageModel = require('../Models/MessageModel').init();
-        this.userModel = require('../Models/UserModel').init();
-        this.fileModel = require('../Models/FileModel').init();
+        //this.messageModel = require('../Models/MessageModel').init();
+        //this.userModel = require('../Models/UserModel').init();
+        //this.fileModel = require('../Models/FileModel').init();
         
     }
 }

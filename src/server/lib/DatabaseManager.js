@@ -13,11 +13,13 @@ var DatabaseManager = {
 		var self = this;
 
         // Connection to chat database
-        console.log("Connecting mongoDB " + Conf.databaseUrl);
+        console.log("Connecting mongoDB " + Conf.chatDatabaseUrl);
 
         try{
-
-	        mongoose.connect(Conf.databaseUrl, function(err){
+            //mongoose.Promise = require('bluebird');
+            //assert.equal(query.exec().constructor, require('bluebird'));
+            //mongoose.set('debug', true);
+	        mongoose.connect(Conf.chatDatabaseUrl, function(err){
 
 	          if (err) {
 

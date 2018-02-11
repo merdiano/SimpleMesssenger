@@ -72,7 +72,7 @@ SignUpHandler.prototype.attach = function(router){
                     password: sha1(password),
                     created: Utils.now()          
                 });
-                        
+                model.markModified('object')
                 model.save(function(err,userModelResult){
                                     
                     if(err){
